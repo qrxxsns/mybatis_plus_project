@@ -1,0 +1,124 @@
+-------------------------------------------------------------------------------
+Test set: com.itheima.mp.mapper.UserMapperTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 27.92 s <<< FAILURE! - in com.itheima.mp.mapper.UserMapperTest
+testUpdateById  Time elapsed: 5.876 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.updateUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testUpdateById(UserMapperTest.java:49)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.updateUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testUpdateById(UserMapperTest.java:49)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testUpdateById(UserMapperTest.java:49)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testUpdateById(UserMapperTest.java:49)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.mp.mapper.UserMapperTest.testUpdateById(UserMapperTest.java:49)
+
+testQueryByIds  Time elapsed: 5.123 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.queryUserByIds
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testQueryByIds(UserMapperTest.java:40)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.queryUserByIds
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testQueryByIds(UserMapperTest.java:40)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testQueryByIds(UserMapperTest.java:40)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testQueryByIds(UserMapperTest.java:40)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.mp.mapper.UserMapperTest.testQueryByIds(UserMapperTest.java:40)
+
+testDeleteUser  Time elapsed: 5.104 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.deleteUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testDeleteUser(UserMapperTest.java:54)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.deleteUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testDeleteUser(UserMapperTest.java:54)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testDeleteUser(UserMapperTest.java:54)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testDeleteUser(UserMapperTest.java:54)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.mp.mapper.UserMapperTest.testDeleteUser(UserMapperTest.java:54)
+
+testInsert  Time elapsed: 5.073 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.saveUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testInsert(UserMapperTest.java:28)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.saveUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testInsert(UserMapperTest.java:28)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testInsert(UserMapperTest.java:28)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testInsert(UserMapperTest.java:28)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.mp.mapper.UserMapperTest.testInsert(UserMapperTest.java:28)
+
+testSelectById  Time elapsed: 5.085 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.queryUserById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testSelectById(UserMapperTest.java:33)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in file [E:\technology\Java\mp-demo\target\classes\mapper\UserMapper.xml]
+### The error may involve com.itheima.mp.mapper.UserMapper.queryUserById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testSelectById(UserMapperTest.java:33)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testSelectById(UserMapperTest.java:33)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.itheima.mp.mapper.UserMapperTest.testSelectById(UserMapperTest.java:33)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.itheima.mp.mapper.UserMapperTest.testSelectById(UserMapperTest.java:33)
+
